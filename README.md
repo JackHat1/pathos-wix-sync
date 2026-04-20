@@ -1,15 +1,15 @@
-# 🛒 Pathos WooCommerce to Wix Migrator & Sync
+#  Pathos WooCommerce to Wix Migrator & Sync
 
 A robust, two-phase Python pipeline designed to extract product data from a WooCommerce store, process images, and generate a fully formatted CSV ready for Wix Stores import. It also includes a syncing mechanism to update prices using either the live WooCommerce data or a local Excel pricelist.
 
-## 🌟 Features
+##  Features
 
 * **Automated API Extraction:** Fetches all products and variations via the WooCommerce REST API.
 * **Image Processing & CDN:** Downloads images locally, caches them (`img_cache.json`), and re-uploads them to FreeImage to create Wix-compatible CDN links. Enforces the 15-image limit per product.
 * **Wix Structuring:** Formats HandleIds, fieldTypes, options, and automatically calculates required `surcharge` values for product variants.
 * **Dynamic Price Syncing:** Easily update your Wix catalog prices using either live WooCommerce data or a local `.xlsx` pricelist file.
 
-## 📂 Project Architecture
+##  Project Architecture
 
 ```text
 pathos-wix-sync/
@@ -28,7 +28,7 @@ pathos-wix-sync/
 └── requirements.txt                  # Python dependencies
 ```
 
-## 🛠️ Setup & Installation
+##  Setup & Installation
 
 1. **Clone the repository:**
    ```bash
@@ -49,7 +49,7 @@ pathos-wix-sync/
    FREEIMAGE_KEY=your_freeimage_api_key
    ```
 
-## 🚀 Usage Guide
+##  Usage Guide
 
 The pipeline is split into two distinct phases depending on your needs.
 
