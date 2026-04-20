@@ -1,0 +1,13 @@
+# Περιβάλλον και Κλειδιά
+.env
+__pycache__/
+
+# Αγνοούμε τα δεδομένα για να μην ανέβουν χιλιάδες εικόνες και βαριά CSV στο GitHub
+data/raw/*
+data/output/*
+data/images_cache/*
+
+# Κρατάμε τους φακέλους ζωντανούς στο GitHub (έστω και άδειους)
+!data/raw/.gitkeep
+!data/output/.gitkeep
+!data/images_cache/.gitkeep
